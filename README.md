@@ -129,10 +129,37 @@
   - y – device type
   - z – outlet number on the floor
     
-             VLAN PC (y)	  VLAN Drukarki (y)	VLAN Wi-Fi (y)
-  Floor 1 (x)	10.1.10.0/24	10.1.20.0/24	10.1.30.0/24
-  Floor 2 (x)	10.2.10.0/24	10.2.20.0/24	10.2.30.0/24
-  Floor 3 (x)	10.3.10.0/24	10.3.20.0/24	10.3.30.0/24
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Floor (x)</th>
+      <th>VLAN PC (y)</th>
+      <th>VLAN Printers (y)</th>
+      <th>VLAN Wi-Fi (y)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Floor 1</td>
+      <td>10.1.10.0/24</td>
+      <td>10.1.20.0/24</td>
+      <td>10.1.30.0/24</td>
+    </tr>
+    <tr>
+      <td>Floor 2</td>
+      <td>10.2.10.0/24</td>
+      <td>10.2.20.0/24</td>
+      <td>10.2.30.0/24</td>
+    </tr>
+    <tr>
+      <td>Floor 3</td>
+      <td>10.3.10.0/24</td>
+      <td>10.3.20.0/24</td>
+      <td>10.3.30.0/24</td>
+    </tr>
+  </tbody>
+</table>
+
   
     
 2.3. VLAN 69 – Management (MGMT)
