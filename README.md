@@ -58,16 +58,63 @@
 2. Logical Structure Description
 
 2.1. Separate Address Pools for Each Floor and Device Type
-  VLAN   Network     Use case
-  110	10.1.10.0/24	PC floor 1
-  120	10.1.20.0/24	Printers floor 1
-  130	10.1.30.0/24	Wi-Fi floor 1
-  210	10.2.10.0/24	PC floor 2
-  220	10.2.20.0/24	Printers floor 2
-  230	10.2.30.0/24	Wi-Fi floor 2
-  310	10.3.10.0/24	PC floor 3
-  320	10.3.20.0/24	Printers floor 3
-  330	10.3.30.0/24	Wi-Fi floor 3 
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>VLAN</th>
+      <th>Network</th>
+      <th>Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>110</td>
+      <td>10.1.10.0/24</td>
+      <td>PC floor 1</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>10.1.20.0/24</td>
+      <td>Printers floor 1</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>10.1.30.0/24</td>
+      <td>Wi-Fi floor 1</td>
+    </tr>
+    <tr>
+      <td>210</td>
+      <td>10.2.10.0/24</td>
+      <td>PC floor 2</td>
+    </tr>
+    <tr>
+      <td>220</td>
+      <td>10.2.20.0/24</td>
+      <td>Printers floor 2</td>
+    </tr>
+    <tr>
+      <td>230</td>
+      <td>10.2.30.0/24</td>
+      <td>Wi-Fi floor 2</td>
+    </tr>
+    <tr>
+      <td>310</td>
+      <td>10.3.10.0/24</td>
+      <td>PC floor 3</td>
+    </tr>
+    <tr>
+      <td>320</td>
+      <td>10.3.20.0/24</td>
+      <td>Printers floor 3</td>
+    </tr>
+    <tr>
+      <td>330</td>
+      <td>10.3.30.0/24</td>
+      <td>Wi-Fi floor 3</td>
+    </tr>
+  </tbody>
+</table>
+
   
   Justification:
   - Vertical isolation (between floors) – prevents Layer 2 broadcast traffic propagation and increases security.
