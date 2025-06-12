@@ -94,15 +94,10 @@
       <td>Blank Panel</td>
       <td>Clearance from UPS for cooling, expansion space</td>
     </tr>
-    <tr>
-      <td>21U</td>
-      <td>APC UPS SMT1500RM2UC</td>
-      <td>Power backup</td>
-    </tr>
-    <tr>
-      <td>22U</td>
-      <td>[Empty]</td>
-      <td>[Empty or reserved]</td>
+   <tr>
+      <td>21U–22U</td>
+      <td rowspan="1">APC UPS SMT1500RM2UC</td>
+      <td rowspan="1">Power backup</td>
     </tr>
   </tbody>
 </table>
