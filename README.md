@@ -17,8 +17,7 @@
 </p>
 
 <br>
-<br>
-<br>
+
 
 <h1>1. Structured Cabling Description</h1>
 <h2>1.1. Network Backbone</h2>
