@@ -1,6 +1,21 @@
-# Three story office building network design in Cisco Packet Tracer
+#🧠 Computer Network Design Project
 <br>
-I hereby present my vision of a three story office bulding network design for an accounting company. That's first of my projects in CPT/GNS3 on field of network design and administration.
+
+
+<p>
+  This repository contains my first major computer networking project, built using 
+  <strong>Cisco Packet Tracer</strong>.
+  The proposed design is tailored for a company offering homogeneous services—such as an 
+  <em>accounting office</em> or similar business environment.
+</p>
+
+<p>
+  The network infrastructure leverages technologies and best practices aligned with the 
+  <strong>Cisco CCNA (Cisco Certified Network Associate)</strong> certification level. It includes 
+  elements such as VLAN segmentation, routing, switching, network security, Access Control Lists and redundancy protocols, 
+  providing a robust foundation for small to medium-sized business operations.
+</p>
+
 <br>
 <br>
 <br>
