@@ -217,7 +217,21 @@
     <tr>
       <td>69</td>
       <td>172.16.69.32/24</td>
-      <td>Switch p3-s3-access<
+      <td>Switch p3-s3-access</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.10/24</td>
+      <td>Router p2-r1-core</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.20/24</td>
+      <td>Router p2-r2-core</td>
+    </tr>
+  </tbody>
+</table>
+
 
   
 2.4. VLAN 100 – Internet Access
