@@ -165,18 +165,60 @@
 2.3. VLAN 69 – Management (MGMT)
   Addressing: 172.16.69.0/24
   Assignment: All devices requiring remote management (switches, routers) have addresses in this subnet.
-  VLAN	  Adress      Use case
-  69	172.16.69.1/24	Switch p1-s1-core
-  69	172.16.69.2/24	Switch p2-s1-core
-  69	172.16.69.3/24	Switch p3-s1-core
-  69	172.16.69.11/24	Switch p1-s2-access
-  69	172.16.69.12/24	Switch p1-s3-access
-  69	172.16.69.21/24	Switch p2-s2-access
-  69	172.16.69.22/24	Switch p2-s3-access
-  69	172.16.69.31/24	Switch p3-s2-access
-  69	172.16.69.32/24	Switch p3-s3-access
-  69	172.16.69.10/24	Router p2-r1-core
-  69	172.16.69.20/24	Router p2-r2-core
+ <table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>VLAN</th>
+      <th>Address</th>
+      <th>Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.1/24</td>
+      <td>Switch p1-s1-core</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.2/24</td>
+      <td>Switch p2-s1-core</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.3/24</td>
+      <td>Switch p3-s1-core</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.11/24</td>
+      <td>Switch p1-s2-access</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.12/24</td>
+      <td>Switch p1-s3-access</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.21/24</td>
+      <td>Switch p2-s2-access</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.22/24</td>
+      <td>Switch p2-s3-access</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.31/24</td>
+      <td>Switch p3-s2-access</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>172.16.69.32/24</td>
+      <td>Switch p3-s3-access<
+
   
 2.4. VLAN 100 – Internet Access
   Addressing: 10.100.100.0/24
