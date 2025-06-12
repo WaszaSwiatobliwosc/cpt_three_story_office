@@ -107,10 +107,38 @@
 2.4. VLAN 100 – Internet Access
   Addressing: 10.100.100.0/24
   Assignment: Devices participating in routing to/from external networks (core switch p2-s1-core and routers)
-  100	10.100.100.1/24  HSRPv2 virtual interface.
-  100	10.100.100.2/24	 Trunking interface p2-s1-core vlan 100.
-  100	10.100.100.10/24 Sub-interface gig0/3/0.100 p2-r1-core.
-  100	10.100.100.20/24 Sub-interface gig0/3/0.100 p2-r2-core.
+ <table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>VLAN</th>
+      <th>IP Address</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>100</td>
+      <td>10.100.100.1/24</td>
+      <td>HSRPv2 virtual interface</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>10.100.100.2/24</td>
+      <td>Trunk interface p2-s1-core VLAN 100</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>10.100.100.10/24</td>
+      <td>Subinterface gig0/3/0.100 p2-r1-core</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>10.100.100.20/24</td>
+      <td>Subinterface gig0/3/0.100 p2-r2-core</td>
+    </tr>
+  </tbody>
+</table>
+
   
 3. Technologies Used
    
