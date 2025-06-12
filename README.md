@@ -9,7 +9,7 @@ I hereby present my vision of a three story office bulding network design for an
 <h2>1.1. Network Backbone</h2>
   The foundation of the building's telecommunications infrastructure is multimode fiber optic cable, which guarantees high throughput and reliable data transmission. Each floor has its own     distribution cabinet connected to the central distribution point (CDP) with fiber optic patch cords running through dedicated shafts.
 
-  The CDP is located on the 2nd floor and is protected by a video monitoring system and an RFID access card issued only to authorized personnel. In the CDP distribution cabinet, you can find   the same equipment as in the distribution cabinets from other floors: 2 patch panels, 2 access switches, 1 core switch, 1 APC (Automatic Power Control), while exclusively in this cabinet     you will find an additional fiber optic switch, router, NAS and IDS/IPS (Intrusion Detection System/Intrusion Prevention System).
+  The CDP is located on the 2nd floor and is protected by a video monitoring system and an RFID access card issued only to authorized personnel. In the CDP distribution cabinet, you can find   the same equipment as in the distribution cabinets from other floors: 2 patch panels, 2 access switches, 1 core switch, 1 APC (Automatic Power Control), while exclusively in this cabinet you will find an additional fiber optic switch, router, NAS (Network Attached Storage) and IDS/IPS (Intrusion Detection System/Intrusion Prevention System).
 
   <table border="1" cellpadding="5" cellspacing="0">
   <thead>
