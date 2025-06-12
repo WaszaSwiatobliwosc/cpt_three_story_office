@@ -1,5 +1,6 @@
 <b>Three story office building network design in Cisco Packet Tracer</b>
-
+<br>
+<br>
 
 1. Structured Cabling Description
 1.1. Network Backbone
@@ -7,20 +8,87 @@
 
   The CDP is located on the 2nd floor and is protected by a video monitoring system and an RFID access card issued only to authorized personnel. In the CDP distribution cabinet, you can find   the same equipment as in the distribution cabinets from other floors: 2 patch panels, 2 access switches, 1 core switch, 1 APC (Automatic Power Control), while exclusively in this cabinet     you will find an additional fiber optic switch, router, NAS and IDS/IPS (Intrusion Detection System/Intrusion Prevention System).
 
-  1U   Fiber Optic Patch Panel     Building uplink
-  2U   Patch Panel 1              Network cable management
-  3U   Patch Panel 2              Network cable management
-  4U   Blank Panel                Improved airflow and cable routing
-  5U   Access Switch (Cisco 2960) Close to patch panels for shorter patch cords
-  6U   Access Switch (Cisco 2960) Close to patch panels for shorter patch cords
-  7U   Core Switch (Cisco 3650)   Close to patch panels for shorter patch cords
-  8U   Blank Panel                Ventilation space
-  9U   Cisco Router 2911          Service termination, Internet access, NAT
-  10U  Blank Panel                Ventilation space
-  11U  IDS/IPS Appliance          Network security
-  ...  Blank Panel                Clearance from UPS for cooling, expansion space
-  21U  APC UPS SMT1500RM2UC       Power backup
-  22U                             [Empty or reserved]
+  <table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Rack Unit (U)</th>
+      <th>Device</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1U</td>
+      <td>Fiber Optic Patch Panel</td>
+      <td>Building uplink</td>
+    </tr>
+    <tr>
+      <td>2U</td>
+      <td>Patch Panel 1</td>
+      <td>Network cable management</td>
+    </tr>
+    <tr>
+      <td>3U</td>
+      <td>Patch Panel 2</td>
+      <td>Network cable management</td>
+    </tr>
+    <tr>
+      <td>4U</td>
+      <td>Blank Panel</td>
+      <td>Improved airflow and cable routing</td>
+    </tr>
+    <tr>
+      <td>5U</td>
+      <td>Access Switch (Cisco 2960)</td>
+      <td>Close to patch panels for shorter patch cords</td>
+    </tr>
+    <tr>
+      <td>6U</td>
+      <td>Access Switch (Cisco 2960)</td>
+      <td>Close to patch panels for shorter patch cords</td>
+    </tr>
+    <tr>
+      <td>7U</td>
+      <td>Core Switch (Cisco 3650)</td>
+      <td>Close to patch panels for shorter patch cords</td>
+    </tr>
+    <tr>
+      <td>8U</td>
+      <td>Blank Panel</td>
+      <td>Ventilation space</td>
+    </tr>
+    <tr>
+      <td>9U</td>
+      <td>Cisco Router 2911</td>
+      <td>Service termination, Internet access, NAT</td>
+    </tr>
+    <tr>
+      <td>10U</td>
+      <td>Blank Panel</td>
+      <td>Ventilation space</td>
+    </tr>
+    <tr>
+      <td>11U</td>
+      <td>IDS/IPS Appliance</td>
+      <td>Network security</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>Blank Panel</td>
+      <td>Clearance from UPS for cooling, expansion space</td>
+    </tr>
+    <tr>
+      <td>21U</td>
+      <td>APC UPS SMT1500RM2UC</td>
+      <td>Power backup</td>
+    </tr>
+    <tr>
+      <td>22U</td>
+      <td>[Empty]</td>
+      <td>[Empty or reserved]</td>
+    </tr>
+  </tbody>
+</table>
 
 
 1.2. Vertical Cabling
