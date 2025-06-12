@@ -133,9 +133,9 @@
   <thead>
     <tr>
       <th>Floor (x)</th>
-      <th>VLAN PC (y)</th>
-      <th>VLAN Printers (y)</th>
-      <th>VLAN Wi-Fi (y)</th>
+      <th>PC VLANs (y)</th>
+      <th>Printer VLANs (y)</th>
+      <th>Wi-Fi VLANs (y)</th>
     </tr>
   </thead>
   <tbody>
