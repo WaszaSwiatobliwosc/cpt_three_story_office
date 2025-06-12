@@ -372,11 +372,18 @@
   ip route 10.1.30.0 255.255.255.0 10.100.100.2, pointing to the p2-s1-core switch interface in VLAN 100 (Internet access).
 
 <h2>3.3. Port Security, DHCP Snooping, Dynamic ARP Inspection</h2>
-  - Port Security:
-  As protection against MAC Flooding and unauthorized hardware connection to the network, port security was introduced on access ports. Due to static address allocation on each wired host,     I decided to limit to 1 address per port with sticky parameter and shutdown reaction mode.
-  
-  - DHCP Snooping:
-  Dynamic address allocation occurs only in VLANs 130, 230, 330, where DHCP Snooping mechanism was introduced to limit the impact of DHCP spoofing/starvation attacks. Trusted ports were       activated only on uplink connections; remaining ports are in untrusted state.
-  
-  - DAI (Dynamic ARP Inspection):
-  Protection against ARP spoofing/poisoning attacks and associated MITM (Man-in-the-Middle) attacks is provided by Dynamic ARP Inspection, utilizing the previously introduced DHCP Snooping     Binding.
+<ul>
+  <li>
+    <strong>Port Security:</strong><br>
+    As protection against MAC Flooding and unauthorized hardware connection to the network, port security was introduced on access ports. Due to static address allocation on each wired host, I decided to limit to 1 address per port with sticky parameter and shutdown reaction mode.
+  </li>
+  <li>
+    <strong>DHCP Snooping:</strong><br>
+    Dynamic address allocation occurs only in VLANs 130, 230, 330, where DHCP Snooping mechanism was introduced to limit the impact of DHCP spoofing/starvation attacks. Trusted ports were activated only on uplink connections; remaining ports are in untrusted state.
+  </li>
+  <li>
+    <strong>DAI (Dynamic ARP Inspection):</strong><br>
+    Protection against ARP spoofing/poisoning attacks and associated MITM (Man-in-the-Middle) attacks is provided by Dynamic ARP Inspection, utilizing the previously introduced DHCP Snooping Binding.
+  </li>
+</ul>
+
