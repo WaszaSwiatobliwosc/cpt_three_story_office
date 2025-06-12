@@ -2,8 +2,8 @@
 <br>
 <br>
 
-1. Structured Cabling Description
-1.1. Network Backbone
+<h1>1. Structured Cabling Description</h1>
+<h2>1.1. Network Backbone</h2>
   The foundation of the building's telecommunications infrastructure is multimode fiber optic cable, which guarantees high throughput and reliable data transmission. Each floor has its own     distribution cabinet connected to the central distribution point (CDP) with fiber optic patch cords running through dedicated shafts.
 
   The CDP is located on the 2nd floor and is protected by a video monitoring system and an RFID access card issued only to authorized personnel. In the CDP distribution cabinet, you can find   the same equipment as in the distribution cabinets from other floors: 2 patch panels, 2 access switches, 1 core switch, 1 APC (Automatic Power Control), while exclusively in this cabinet     you will find an additional fiber optic switch, router, NAS and IDS/IPS (Intrusion Detection System/Intrusion Prevention System).
@@ -91,10 +91,10 @@
 </table>
 
 
-1.2. Vertical Cabling
+<h2>1.2. Vertical Cabling</h2>
   The vertical cabling has been routed through specially planned telecommunications shafts and installation shafts, located in the immediate vicinity of the elevator shaft. This solution       ensures easy service access while protecting the cables from accidental damage and isolating them from user influence and external conditions. The shafts contain backbones based on           multimode fiber optic terminated with LC/PC connectors to SFP+ 10G modules, which makes the network resistant to fragmentation and transmission queuing, ensures bandwidth capable of          carrying the full load of individual users without affecting the rest of the network, and guarantees adequate throughput.
 
-1.3. Horizontal Cabling
+<h2>1.3. Horizontal Cabling</h2>
   Within the horizontal infrastructure, 3 cable management systems and subscriber outlet establishment systems have been implemented, adapted to the specifics of equipment installation and     workstations:
 
   Raised Floor and Cable Trays
@@ -106,7 +106,7 @@
   Cabling in Suspended Ceilings
   Equipment mounted above 1 meter from floor level, such as WiFi access points (AP), has been connected using UTP Cat. 6A cables routed in the suspended ceiling space. This solution ensures    minimal interference with room aesthetics while enabling easy adjustment and potential network expansion without the need for wall demolition.
 
-1.4. Description Methodology
+<h2>1.4. Description Methodology</h2>
   The network features clear and consistent naming conventions that facilitate management and diagnostics.
 
   Each outlet has a unique name according to the format:
@@ -123,9 +123,9 @@
   device type - floor number - subscriber outlet number, e.g., PC-p2-6.
 
 
-2. Logical Structure Description
+<h1>2. Logical Structure Description</h1>
 
-2.1. Separate Address Pools for Each Floor and Device Type
+<h2>2.1. Separate Address Pools for Each Floor and Device Type</h2>
 <table border="1" cellpadding="5" cellspacing="0">
   <thead>
     <tr>
@@ -191,7 +191,7 @@
 
   Each VLAN is a separate broadcast domain, which isolates Layer 2 traffic between floors.
 
-2.2. Logical Addressing Scheme
+<h2>2.2. Logical Addressing Scheme</h2>
 	10.x.y.z/24, where:
   - x – floor number
   - y – device type
@@ -230,7 +230,7 @@
 
   
     
-2.3. VLAN 69 – Management (MGMT)
+<h2>2.3. VLAN 69 – Management (MGMT)</h2>
   Addressing: 172.16.69.0/24
   Assignment: All devices requiring remote management (switches, routers) have addresses in this subnet.
  <table border="1" cellpadding="5" cellspacing="0">
@@ -302,7 +302,7 @@
 
 
   
-2.4. VLAN 100 – Internet Access
+<h2>2.4. VLAN 100 – Internet Access</h2>
   Addressing: 10.100.100.0/24
   Assignment: Devices participating in routing to/from external networks (core switch p2-s1-core and routers)
  <table border="1" cellpadding="5" cellspacing="0">
@@ -338,12 +338,12 @@
 </table>
 
   
-3. Technologies Used
+<h1>3. Technologies Used</h1>
    
-3.1. Trunking at Access and Core Layer Interface
+<h2>3.1. Trunking at Access and Core Layer Interface</h2>
   EtherChannel has been implemented in the network, increasing throughput from 100 to 800Mbps between access-core layers (In physical equipment, I would implement switch-stack master-slave,    but Packet Tracer does not support this solution). This way, each host has 100Mbps available, and in case of infection and DoS attack attempt by link saturation, it can saturate a maximum    of 100Mbps, while the remaining 700Mbps is shared among the rest of the hosts. The solution is also cost-friendly, using cheaper, Fast Ethernet Cisco switches, e.g., Catalyst 2960.
   
- 3.2. Switching & Routing
+ <h2>3.2. Switching & Routing</h2>
   InterVLAN routing occurs on enterprise-class L3 switches, here Catalyst 3650, which also runs the DHCP server distributing addresses within VLANs. Using these switches means creating a       core layer with management access where switches are addressed. Edge devices operate based on HSRP (Hot Standby Router Protocol), offering a single, virtual default gateway interface.        Such a router serves primarily as a gateway for secure remote VPN connections and for routing traffic in the in-out relationship, commonly called a NAT router, allowing the secure,           scalable network to access the Internet.
   
   HSRP operates in version 2 as one address configured on ports of two routers from the LAN side. It's worth mentioning that the "router-on-a-stick" technique was used to maintain interVLAN    routing on core switches and utilize a single router interface for routing traffic from Internet access VLAN 100 and serving as gateway to management VLAN 69. On the other side of the        router on gig0/1/0, a fictitious ISP address was set. For greater clarity, private Class C addresses were used; in worklife, dedicated IP addresses would appear on the edge                   interfaces of both routers in HSRP. In laboratory conditions, I used an Internet simulator in the form of a hop–router on which I performed static routing.
@@ -359,7 +359,7 @@
   ip nat inside source list 1 interface gig0/1/0 overload, pointing to the router's edge interface for outgoing traffic. Dedicated return routes were added for VLAN addressing:
   ip route 10.1.30.0 255.255.255.0 10.100.100.2, pointing to the p2-s1-core switch interface in VLAN 100 (Internet access).
 
-3.3. Port Security, DHCP Snooping, Dynamic ARP Inspection
+<h2>3.3. Port Security, DHCP Snooping, Dynamic ARP Inspection</h2>
   - Port Security:
   As protection against MAC Flooding and unauthorized hardware connection to the network, port security was introduced on access ports. Due to static address allocation on each wired host,     I decided to limit to 1 address per port with sticky parameter and shutdown reaction mode.
   
@@ -368,6 +368,3 @@
   
   - DAI (Dynamic ARP Inspection):
   Protection against ARP spoofing/poisoning attacks and associated MITM (Man-in-the-Middle) attacks is provided by Dynamic ARP Inspection, utilizing the previously introduced DHCP Snooping     Binding.
-  
-  
-
