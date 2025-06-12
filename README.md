@@ -1,7 +1,6 @@
 # Three story office building network design in Cisco Packet Tracer
-
-I hereby represent my vision of a three story office bulding network design for an accounting company. That's first of my projects in CPT/GNS3 on field of network design and administration.
 <br>
+I hereby represent my vision of a three story office bulding network design for an accounting company. That's first of my projects in CPT/GNS3 on field of network design and administration.
 <br>
 <br>
 <br>
