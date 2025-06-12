@@ -204,11 +204,13 @@
   Each VLAN is a separate broadcast domain, which isolates Layer 2 traffic between floors.
 
 <h2>2.2. Logical Addressing Scheme</h2>
-	10.x.y.z/24, where:
-  - x – floor number
-  - y – device type
-  - z – outlet number on the floor
-    
+	<p>10.x.y.z/24, where:</p>
+<ul>
+  <li><strong>x</strong> – floor number</li>
+  <li><strong>y</strong> – device type</li>
+  <li><strong>z</strong> – outlet number on the floor</li>
+</ul>
+
 <table border="1" cellpadding="5" cellspacing="0">
   <thead>
     <tr>
@@ -243,8 +245,8 @@
   
     
 <h2>2.3. VLAN 69 – Management (MGMT)</h2>
-  Addressing: 172.16.69.0/24
-  Assignment: All devices requiring remote management (switches, routers) have addresses in this subnet.
+<p><strong>Addressing:</strong> 172.16.69.0/24</p>
+<p><strong>Assignment:</strong> All devices requiring remote management (switches, routers) have addresses in this subnet.</p>
  <table border="1" cellpadding="5" cellspacing="0">
   <thead>
     <tr>
@@ -315,8 +317,10 @@
 
   
 <h2>2.4. VLAN 100 – Internet Access</h2>
-  Addressing: 10.100.100.0/24
-  Assignment: Devices participating in routing to/from external networks (core switch p2-s1-core and routers)
+
+<p><strong>Addressing:</strong> 10.100.100.0/24</p>
+<p><strong>Assignment:</strong> Devices participating in routing to/from external networks (core switch p2-s1-core and routers)</p>
+
  <table border="1" cellpadding="5" cellspacing="0">
   <thead>
     <tr>
