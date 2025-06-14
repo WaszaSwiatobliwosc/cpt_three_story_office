@@ -16,11 +16,11 @@
   providing a robust foundation for small to medium-sized business operations.
 </p>
 <br>
-<img src="p3.PNG" alt="Diagram p1" width="699">
+<img src="p3.PNG" alt="Diagram p1" width="700">
 <br>
-<img src="p2.PNG" alt="Diagram p2" width="699">
+<img src="p2.PNG" alt="Diagram p2" width="700">
 <br>
-<img src="p1.PNG" alt="Diagram p3" width="900">
+<img src="p1.PNG" alt="Diagram p3" width="700">
 <br>
 
 
