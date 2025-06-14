@@ -15,7 +15,7 @@
   elements such as VLAN segmentation, routing, switching, network security, Access Control Lists and redundancy protocols, 
   providing a robust foundation for small to medium-sized business operations.
 </p>
-<img src="p1.png" alt="Floor1" width="699">
+<img src="p1.PNG" alt="Floor1" width="699">
 
 
 <br>
